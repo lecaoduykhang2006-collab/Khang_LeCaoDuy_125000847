@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NexTech - Website giới thiệu thiết bị công nghệ đỉnh cao và tin tức công nghệ mới nhất. Bài thi Thiết kế Web của sinh viên Lê Cao Duy Khang - MSSV: 125000847.">
+    <meta name="keywords" content="công nghệ, thiết bị AI, laptop, smartphone, tin tức tech, landing page, Lê Cao Duy Khang">
+    <meta name="author" content="Lê Cao Duy Khang - 125000847">
+    <title>NexTech | Sản Phẩm & Tin Tức Công Nghệ Đột Phá 2026</title>
+
+    <!-- Google Fonts: Outfit & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Thư viện Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Thư viện AOS (Animate On Scroll) CDN CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER & NAVIGATION CHUẨN SEMANTIC -->
+    <header class="site-header" id="top-header">
+        <div class="header-container">
+            <a href="#hero" class="brand-logo" aria-label="NexTech Trang Chủ">
+                <span class="logo-badge"><i class="fa-solid fa-microchip"></i></span>
+                <span class="logo-text">NexTech<span class="logo-accent">.io</span></span>
+            </a>
+
+            <nav class="main-navbar" aria-label="Thanh điều hướng chính">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Trang chủ</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Sản phẩm nổi bật</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Công nghệ AI</a></li>
+                    <li class="nav-item"><a href="#news" class="nav-link">Tin công nghệ</a></li>
+                    <li class="nav-item"><a href="#newsletter" class="nav-link">Đăng ký</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#products" class="btn btn-outline nav-btn">Khám phá</a>
+                <a href="#contact" class="btn btn-primary nav-cta">Liên hệ ngay</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Mở menu di động" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. MAIN CONTENT AREA -->
+    <main id="main-content">
+
+        <!-- SECTION 1: HERO BANNER (Ứng dụng Animate.css) -->
+        <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+            <div class="hero-backdrop-glow"></div>
+            <div class="hero-container">
+                <article class="hero-content">
+                    <span class="hero-badge animate__animated animate__fadeInDown">
+                        <i class="fa-solid fa-bolt"></i> Hệ Sinh Thái Công Nghệ Thế Hệ Mới 2026
+                    </span>
+                    <h1 id="hero-heading" class="hero-title animate__animated animate__fadeInLeft">
+                        Định Hình Tương Lai Cùng <span class="text-gradient">Phần Cứng Trí Tuệ Nhân Tạo</span>
+                    </h1>
+                    <p class="hero-description animate__animated animate__fadeInLeft animate__delay-1s">
+                        Trải nghiệm sức mạnh xử lý lượng tử đỉnh cao, màn hình Retina 165Hz siêu mỏng cùng vi xử lý Neural Core độc quyền. Thiết kế cho lập trình viên, nhà sáng tạo và tín đồ công nghệ tương lai.
+                    </p>
+                    <div class="hero-buttons animate__animated animate__fadeInUp animate__delay-1s">
+                        <a href="#products" class="btn btn-primary btn-large">
+                            <i class="fa-solid fa-bag-shopping"></i> Mua ngay hôm nay
+                        </a>
+                        <a href="#features" class="btn btn-glass btn-large">
+                            <i class="fa-solid fa-play"></i> Xem video giới thiệu
+                        </a>
+                    </div>
+                    <ul class="hero-stats animate__animated animate__fadeInUp animate__delay-2s">
+                        <li class="stat-item">
+                            <strong class="stat-number">10x</strong>
+                            <span class="stat-label">Hiệu năng NPU AI</span>
+                        </li>
+                        <li class="stat-divider" aria-hidden="true"></li>
+                        <li class="stat-item">
+                            <strong class="stat-number">08 min</strong>
+                            <span class="stat-label">Sạc siêu tốc Graphene</span>
+                        </li>
+                        <li class="stat-divider" aria-hidden="true"></li>
+                        <li class="stat-item">
+                            <strong class="stat-number">99.8%</strong>
+                            <span class="stat-label">Hài lòng toàn cầu</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <figure class="hero-showcase animate__animated animate__zoomIn animate__delay-1s">
+                    <div class="device-card-glow">
+                        <div class="device-frame">
+                            <div class="device-top-bar">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                                <span class="device-title-tag">NexPro Quantum AI Terminal</span>
+                            </div>
+                            <div class="device-screen">
+                                <div class="hologram-visual">
+                                    <div class="quantum-core">
+                                        <i class="fa-solid fa-brain core-icon"></i>
+                                    </div>
+                                    <div class="orbit-ring ring-1"></div>
+                                    <div class="orbit-ring ring-2"></div>
+                                </div>
+                                <div class="device-specs-overlay">
+                                    <div class="spec-pill"><i class="fa-solid fa-microchip"></i> NPU M4 Quantum</div>
+                                    <div class="spec-pill"><i class="fa-solid fa-wifi"></i> 6G HyperLink</div>
+                                    <div class="spec-pill"><i class="fa-solid fa-shield-halved"></i> Quantum Shield</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECTION 2: DANH MỤC THIẾT BỊ CÔNG NGHỆ NỔI BẬT (AOS Scroll Animation) -->
+        <section id="products" class="products-section" aria-labelledby="products-title">
+            <div class="section-container">
+                <header class="section-header" data-aos="fade-up">
+                    <span class="section-category">Hệ Sinh Thái Thiết Bị</span>
+                    <h2 id="products-title" class="section-title">Thiết Bị Công Nghệ Nổi Bật</h2>
+                    <p class="section-description">
+                        Những dòng sản phẩm tiên phong sở hữu công nghệ vi mạch lượng tử và thiết kế kim loại nguyên khối chuẩn hàng không vũ trụ.
+                    </p>
+                </header>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-badge">Flagship 2026</div>
+                        <figure class="product-thumb">
+                            <div class="product-icon-wrapper tech-cyan">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                        </figure>
+                        <div class="product-body">
+                            <div class="product-category">Điện thoại thông minh AI</div>
+                            <h3 class="product-title">NexPhone 16 Quantum Pro</h3>
+                            <p class="product-description">
+                                Màn hình Super Retina XDR 6.8 inch 165Hz, cụm 4 camera cảm biến lượng tử 200MP và chip xử lý Neural Core AI thế hệ thứ 5.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fa-solid fa-check"></i> Chip Neural Gen 5 (3nm)</li>
+                                <li><i class="fa-solid fa-check"></i> Khung vỏ Titanium Grade 5</li>
+                                <li><i class="fa-solid fa-check"></i> Sạc không dây từ xa 50W</li>
+                            </ul>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-current">28.990.000₫</span>
+                                    <span class="price-old">32.990.000₫</span>
+                                </div>
+                                <button class="btn btn-sm btn-primary" aria-label="Mua ngay NexPhone 16 Quantum Pro">
+                                    Mua ngay <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-badge badge-popular">Bán Chạy Nhất</div>
+                        <figure class="product-thumb">
+                            <div class="product-icon-wrapper tech-purple">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                        </figure>
+                        <div class="product-body">
+                            <div class="product-category">Máy tính xách tay cao cấp</div>
+                            <h3 class="product-title">NexBook Ultra M-Matrix</h3>
+                            <p class="product-description">
+                                Cỗ máy đồ họa tối thượng dành cho Kỹ sư AI và Lập trình viên. Màn hình OLED 4K 16 inch chuẩn màu DCI-P3 100%, thời lượng pin 24 giờ.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fa-solid fa-check"></i> 64GB LPDDR5X RAM thống nhất</li>
+                                <li><i class="fa-solid fa-check"></i> 2TB NVMe Gen5 PCIe SSD</li>
+                                <li><i class="fa-solid fa-check"></i> Tản nhiệt buồng hơi lỏng Cryo</li>
+                            </ul>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-current">45.490.000₫</span>
+                                    <span class="price-old">49.990.000₫</span>
+                                </div>
+                                <button class="btn btn-sm btn-primary" aria-label="Mua ngay NexBook Ultra M-Matrix">
+                                    Mua ngay <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-badge">Công Nghệ Tương Lai</div>
+                        <figure class="product-thumb">
+                            <div class="product-icon-wrapper tech-pink">
+                                <i class="fa-solid fa-vr-cardboard"></i>
+                            </div>
+                        </figure>
+                        <div class="product-body">
+                            <div class="product-category">Điện toán Không gian (AR/VR)</div>
+                            <h3 class="product-title">NexVision Spatial Vision X</h3>
+                            <p class="product-description">
+                                Kính thực tế mở rộng không gian cá nhân với độ phân giải 8K cho mỗi mắt, điều khiển bằng cử chỉ mắt và sóng não sinh trắc học.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fa-solid fa-check"></i> Micro-OLED 8K kép cực nét</li>
+                                <li><i class="fa-solid fa-check"></i> Theo dõi ánh mắt mili-giây</li>
+                                <li><i class="fa-solid fa-check"></i> Âm thanh Spatial Audio 3D</li>
+                            </ul>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-current">62.000.000₫</span>
+                                    <span class="price-old">68.000.000₫</span>
+                                </div>
+                                <button class="btn btn-sm btn-primary" aria-label="Mua ngay NexVision Spatial Vision X">
+                                    Mua ngay <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="product-badge">Đột Phá Y Tế AI</div>
+                        <figure class="product-thumb">
+                            <div class="product-icon-wrapper tech-amber">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                        </figure>
+                        <div class="product-body">
+                            <div class="product-category">Đồng hồ thông minh Sinh trắc</div>
+                            <h3 class="product-title">NexWatch Apex Titanium</h3>
+                            <p class="product-description">
+                                Giám sát nhịp tim, điện tâm đồ ECG liên tục, đo huyết áp quang học và phát hiện sớm bất thường sức khỏe nhờ mô hình chẩn đoán AI.
+                            </p>
+                            <ul class="product-features">
+                                <li><i class="fa-solid fa-check"></i> Kính Sapphire chống xước 9H</li>
+                                <li><i class="fa-solid fa-check"></i> Chống nước chuẩn quân đội 10ATM</li>
+                                <li><i class="fa-solid fa-check"></i> Pin năng lượng mặt trời 14 ngày</li>
+                            </ul>
+                            <div class="product-footer">
+                                <div class="product-price">
+                                    <span class="price-current">14.290.000₫</span>
+                                    <span class="price-old">16.500.000₫</span>
+                                </div>
+                                <button class="btn btn-sm btn-primary" aria-label="Mua ngay NexWatch Apex Titanium">
+                                    Mua ngay <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: CÔNG NGHỆ ĐỘT PHÁ & TÍNH NĂNG ĐẶC TRƯNG -->
+        <section id="features" class="features-section" aria-labelledby="features-title">
+            <div class="section-container">
+                <header class="section-header" data-aos="fade-up">
+                    <span class="section-category">Trụ Cột Đổi Mới</span>
+                    <h2 id="features-title" class="section-title">Tại Sao Nên Chọn Hệ Sinh Thái NexTech?</h2>
+                    <p class="section-description">
+                        Chúng tôi không chỉ sản xuất thiết bị phần cứng đơn thuần — chúng tôi tạo ra trung tâm điều khiển cuộc sống số của bạn.
+                    </p>
+                </header>
+
+                <div class="features-grid">
+                    <article class="feature-card" data-aos="zoom-in-up" data-aos-delay="100">
+                        <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <h3 class="feature-title">Bộ Xử Lý Neural NPU 5nm</h3>
+                        <p class="feature-desc">
+                            Khả năng tính toán 120 nghìn tỷ phép tính mỗi giây (TOPS), chạy các mô hình ngôn ngữ lớn (LLM) nội bộ ngay trên thiết bị mà không cần gửi dữ liệu lên mây.
+                        </p>
+                    </article>
+
+                    <article class="feature-card" data-aos="zoom-in-up" data-aos-delay="200">
+                        <div class="feature-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                        <h3 class="feature-title">Bảo Mật Lượng Tử QuantumGuard</h3>
+                        <p class="feature-desc">
+                            Mã hóa bất khả xâm phạm ở cấp độ vi mạch phần cứng. Ngăn chặn triệt để mọi hành vi xâm nhập, đánh cắp danh tính và tấn công mạng từ tương lai.
+                        </p>
+                    </article>
+
+                    <article class="feature-card" data-aos="zoom-in-up" data-aos-delay="300">
+                        <div class="feature-icon"><i class="fa-solid fa-battery-bolt"></i></div>
+                        <h3 class="feature-title">Pin Thể Rắn Graphene Solid-State</h3>
+                        <p class="feature-desc">
+                            Tăng mật độ lưu trữ năng lượng lên 300%, chống chai pin sau 5000 chu kỳ và thời gian sạc đầy từ 0% lên 100% chỉ trong vỏn vẹn 8 phút.
+                        </p>
+                    </article>
+
+                    <article class="feature-card" data-aos="zoom-in-up" data-aos-delay="400">
+                        <div class="feature-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                        <h3 class="feature-title">Kết Nối 6G Vệ Tinh Toàn Cầu</h3>
+                        <p class="feature-desc">
+                            Đảm bảo thiết bị luôn trong trạng thái trực tuyến với độ trễ dưới 1 mili-giây ở bất kỳ đâu trên Trái Đất, từ sa mạc Sahara đến đại dương sâu thẳm.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: TIN TỨC CÔNG NGHỆ MỚI NHẤT (Semantic <article>) -->
+        <section id="news" class="news-section" aria-labelledby="news-title">
+            <div class="section-container">
+                <header class="section-header" data-aos="fade-up">
+                    <span class="section-category">Bản Tin & Xu Hướng</span>
+                    <h2 id="news-title" class="section-title">Tin Tức Công Nghệ Nổi Bật</h2>
+                    <p class="section-description">
+                        Cập nhật các bước chuyển mình quan trọng của ngành công nghệ bán dẫn, trí tuệ nhân tạo và khoa học vi tính thế giới.
+                    </p>
+                </header>
+
+                <div class="news-grid">
+                    <!-- News 1 -->
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="100">
+                        <figure class="news-image-wrapper">
+                            <div class="news-placeholder-img img-ai">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <span class="news-tag">AI & Machine Learning</span>
+                        </figure>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2026-10-18"><i class="fa-regular fa-calendar"></i> 18/10/2026</time>
+                                <span class="news-author"><i class="fa-regular fa-user"></i> Lê Cao Duy Khang</span>
+                            </div>
+                            <h3 class="news-headline">
+                                <a href="#news" class="headline-link">Kỷ Nguyên On-Device AI: Khi Trí Tuệ Nhân Tạo Không Cần Đám Mây</a>
+                            </h3>
+                            <p class="news-summary">
+                                Các thế hệ chip NPU mới đang tái định hình cách thiết bị thông minh xử lý tác vụ phức tạp, giúp bảo mật dữ liệu tuyệt đối và triệt tiêu độ trễ mạng...
+                            </p>
+                            <a href="#news" class="read-more-btn">
+                                Đọc chi tiết <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- News 2 -->
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="200">
+                        <figure class="news-image-wrapper">
+                            <div class="news-placeholder-img img-quantum">
+                                <i class="fa-solid fa-atom"></i>
+                            </div>
+                            <span class="news-tag">Điện Toán Lượng Tử</span>
+                        </figure>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2026-10-15"><i class="fa-regular fa-calendar"></i> 15/10/2026</time>
+                                <span class="news-author"><i class="fa-regular fa-user"></i> Ban Biên Tập Tech</span>
+                            </div>
+                            <h3 class="news-headline">
+                                <a href="#news" class="headline-link">Đột Phá Bán Dẫn 1nm: Giới Hạn Vật Lý Mới Của Silicon Đã Bị Phá Vỡ</a>
+                            </h3>
+                            <p class="news-summary">
+                                Viện nghiên cứu vật liệu bán dẫn công bố kiến trúc bóng bán dẫn Gate-All-Around thế hệ mới, mở đường cho những siêu máy tính bỏ túi...
+                            </p>
+                            <a href="#news" class="read-more-btn">
+                                Đọc chi tiết <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- News 3 -->
+                    <article class="news-card" data-aos="fade-up" data-aos-delay="300">
+                        <figure class="news-image-wrapper">
+                            <div class="news-placeholder-img img-spatial">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                            <span class="news-tag">Không Gian Số (Spatial)</span>
+                        </figure>
+                        <div class="news-content">
+                            <div class="news-meta">
+                                <time datetime="2026-10-12"><i class="fa-regular fa-calendar"></i> 12/10/2026</time>
+                                <span class="news-author"><i class="fa-regular fa-user"></i> Nhóm Nghiên Cứu</span>
+                            </div>
+                            <h3 class="news-headline">
+                                <a href="#news" class="headline-link">Điện Toán Không Gian Thay Đổi Môi Trường Làm Việc Toàn Cầu Ra Sao?</a>
+                            </h3>
+                            <p class="news-summary">
+                                Từ thiết kế kiến trúc 3D đến phẫu thuật từ xa, các thiết bị Spatial Computing đang dần thay thế màn hình máy tính truyền thống...
+                            </p>
+                            <a href="#news" class="read-more-btn">
+                                Đọc chi tiết <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: FORM ĐĂNG KÝ NHẬN TIN CÔNG NGHỆ (NEWSLETTER FORM) -->
+        <section id="newsletter" class="newsletter-section" aria-labelledby="newsletter-title" data-aos="zoom-in">
+            <div class="newsletter-card">
+                <div class="newsletter-content">
+                    <span class="newsletter-sub">Nhận Tin Sớm & Khuyến Mãi Độc Quyền</span>
+                    <h2 id="newsletter-title" class="newsletter-title">Gia Nhập Cộng Đồng Công Nghệ NexTech</h2>
+                    <p class="newsletter-desc">
+                        Đăng ký ngay hôm nay để nhận thông báo ra mắt sản phẩm mới nhất, bản tin phân tích xu hướng công nghệ hàng tuần và mã giảm giá 15% cho đơn hàng đầu tiên.
+                    </p>
+                    <form class="newsletter-form" id="subscribeForm" action="#" method="POST" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký nhận tin từ NexTech!');">
+                        <div class="form-group">
+                            <label for="subscriber-email" class="visually-hidden">Địa chỉ Email của bạn</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-envelope input-icon"></i>
+                                <input type="email" id="subscriber-email" name="email" class="form-input" placeholder="Nhập địa chỉ email của bạn..." required>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span>Đăng ký ngay</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <p class="form-privacy-note">
+                            <i class="fa-solid fa-lock"></i> Chúng tôi cam kết bảo mật 100% dữ liệu email. Bạn có thể hủy đăng ký bất kỳ lúc nào.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 3. FOOTER CHUẨN SEMANTIC -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-top">
+            <div class="footer-container">
+                <!-- Col 1: Brand Info -->
+                <div class="footer-col brand-col">
+                    <a href="#hero" class="brand-logo footer-logo" aria-label="NexTech Trang Chủ">
+                        <span class="logo-badge"><i class="fa-solid fa-microchip"></i></span>
+                        <span class="logo-text">NexTech<span class="logo-accent">.io</span></span>
+                    </a>
+                    <p class="brand-bio">
+                        Nền tảng tiên phong cung cấp thiết bị phần cứng tích hợp trí tuệ nhân tạo và bản tin công nghệ chuyên sâu phục vụ cộng đồng công nghệ Việt Nam và toàn cầu.
+                    </p>
+                    <div class="social-links" aria-label="Liên kết mạng xã hội">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Liên Kết Nhanh</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Trang chủ</a></li>
+                        <li><a href="#products">Sản phẩm nổi bật</a></li>
+                        <li><a href="#features">Công nghệ đột phá</a></li>
+                        <li><a href="#news">Bản tin công nghệ</a></li>
+                        <li><a href="#newsletter">Đăng ký nhận tin</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Categories -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Danh Mục Thiết Bị</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">Điện thoại AI Flagship</a></li>
+                        <li><a href="#products">Laptop Workstation M-Matrix</a></li>
+                        <li><a href="#products">Kính thực tế không gian 8K</a></li>
+                        <li><a href="#products">Đồng hồ thông minh Sinh trắc</a></li>
+                        <li><a href="#products">Phụ kiện sạc siêu tốc</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & University Info -->
+                <div class="footer-col contact-col">
+                    <h4 class="footer-heading">Thông Tin Đồ Án</h4>
+                    <address class="contact-info">
+                        <p><i class="fa-solid fa-user-graduate"></i> <strong>Sinh viên:</strong> Lê Cao Duy Khang</p>
+                        <p><i class="fa-solid fa-id-card"></i> <strong>MSSV:</strong> 125000847</p>
+                        <p><i class="fa-solid fa-book-open"></i> <strong>Học phần:</strong> Thiết kế Web (Giữa kỳ)</p>
+                        <p><i class="fa-solid fa-school"></i> <strong>Khoa:</strong> Công nghệ Thông tin</p>
+                        <p><i class="fa-solid fa-location-dot"></i> <strong>Trường:</strong> Đại học Lạc Hồng (LHU)</p>
+                        <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> 125000847@lhu.edu.vn</p>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p class="copyright-text">
+                    &copy; 2026 <strong>NexTech.io</strong> - Bài thi Giữa kỳ môn Thiết kế Web. Thiết kế & Phát triển bởi <strong>Lê Cao Duy Khang (MSSV: 125000847)</strong>.
+                </p>
+                <div class="footer-legal-links">
+                    <a href="#">Điều khoản sử dụng</a>
+                    <span class="sep">&bull;</span>
+                    <a href="#">Chính sách bảo mật</a>
+                    <span class="sep">&bull;</span>
+                    <a href="#">Báo cáo đồ án</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Nút Cuộn Lên Đầu Trang (Back to top) -->
+    <a href="#hero" class="back-to-top" id="backToTop" aria-label="Cuộn lên đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Thư viện AOS (Animate On Scroll) CDN JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Kịch bản kích hoạt và cấu hình AOS & tương tác giao diện -->
+    <script>
+        // 1. Kích hoạt thư viện AOS (Animate On Scroll)
+        AOS.init({
+            duration: 800,        // Thời gian diễn ra hiệu ứng (800ms)
+            once: true,           // Chỉ chạy hiệu ứng một lần khi cuộn qua
+            offset: 100,          // Khoảng cách kích hoạt trước khi phần tử xuất hiện
+            easing: 'ease-out-cubic' // Gia tốc chuyển động tự nhiên
+        });
+
+        // 2. Xử lý Toggle Menu di động
+        const menuToggle = document.getElementById('menuToggle');
+        const mainNav = document.querySelector('.main-navbar');
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener('click', () => {
+                const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+                menuToggle.setAttribute('aria-expanded', !isExpanded);
+                mainNav.classList.toggle('is-open');
+                menuToggle.innerHTML = isExpanded 
+                    ? '<i class="fa-solid fa-bars"></i>' 
+                    : '<i class="fa-solid fa-xmark"></i>';
+            });
+        }
+
+        // Đóng menu khi nhấp vào link điều hướng (trên mobile)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                if (mainNav.classList.contains('is-open')) {
+                    mainNav.classList.remove('is-open');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                }
+            });
+        });
+
+        // 3. Hiển thị nút Cuộn Lên Đầu Trang khi cuộn quá 300px
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
